@@ -1,49 +1,49 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>노르웨이의 유명한 절벽</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>노르웨이의 유명한 절벽</title>
 
-<style>
-/*전체*/
-* {padding:0; margin:0; box-sizing:border-box;}
-html, body {font: 13pt/170% "나눔고딕","맑은 고딕";}
-img {max-width:100%;}
-a {text-decoration:none; color:black;}
-a:hover {text-decoration:underline; color:skyblue;}
-/*상단*/
-header 	{background:#eee; padding:20pt 0; text-align:center; position:relative;}
-/*메뉴+메인+부가*/
-#layout {max-width:1000px; margin:auto; display:flex; flex-direction: column; padding:10px;}
-/*메뉴*/
-nav 	{margin:10pt; flex:1;}
-nav ul 	{list-style-position:inside;}
-nav li 	{padding:10pt; border-bottom:1px solid #ddd;}
-/* 메인*/
-main h2	 {padding:15pt 0 5pt;}
-main p {text-align: justify; line-height: 180%; padding-bottom:10pt;}
-main img {display:block;}
-/*부가정보*/
-aside   {background:lightblue; padding:10pt; margin-top:10pt;}
-aside h2 {margin:5pt 0; font-size:1.2rem;}
-aside h2::before {content:"💕"}
-/*하단*/
-footer {background:#ddd; padding:10pt; font-size:0.8rem; line-height:150%; text-align:center;}
+	<style>
+		/*전체*/
+		* {padding:0; margin:0; box-sizing:border-box;}
+		html, body {font: 13pt/170% "나눔고딕","맑은 고딕";}
+		img {max-width:100%;}
+		a {text-decoration:none; color:black;}
+		a:hover {text-decoration:underline; color:skyblue;}
+		/*상단*/
+		header 	{background:#eee; padding:20pt 0; text-align:center; position:relative;}
+		/*메뉴+메인+부가*/
+		#layout {max-width:1000px; margin:auto; display:flex; flex-direction: column; padding:10px;}
+		/*메뉴*/
+		nav 	{margin:10pt; flex:1;}
+		nav ul 	{list-style-position:inside;}
+		nav li 	{padding:10pt; border-bottom:1px solid #ddd;}
+		/* 메인*/
+		main h2	 {padding:15pt 0 5pt;}
+		main p {text-align: justify; line-height: 180%; padding-bottom:10pt;}
+		main img {display:block;}
+		/*부가정보*/
+		aside   {background:lightblue; padding:10pt; margin-top:10pt;}
+		aside h2 {margin:5pt 0; font-size:1.2rem;}
+		aside h2::before {content:"\2766"; color:red; padding-right:5pt;}
+		/*하단*/
+		footer {background:#ddd; padding:10pt; font-size:0.8rem; line-height:150%; text-align:center;}
 
-/*아이패트크기이상(최소넓이 768픽셀)*/
-@media(min-width:768px){
-	#layout {flex-direction: row; flex-wrap:wrap;}
-	nav {flex:1;}
-	main {flex:2;}
-	aside {flex-basis:100%;}
-}
-/*아이패드PRO크기이상(최소넓이 1024픽셀)*/
-@media(min-width:1024px){
-	nav {flex:1;}
-	main {flex:2.5;}
-}
-</style>
+		/*아이패트크기이상(최소넓이 768픽셀)*/
+		@media(min-width:768px){
+			#layout {flex-direction: row; flex-wrap:wrap;}
+			nav {flex:1;}
+			main {flex:2;}
+			aside {flex-basis:100%;}
+		}
+		/*아이패드PRO크기이상(최소넓이 1024픽셀)*/
+		@media(min-width:1024px){
+			nav {flex:1;}
+			main {flex:2.5;}
+		}
+	</style>
 </head>
 <body>
 	<header>
@@ -78,32 +78,6 @@ footer {background:#ddd; padding:10pt; font-size:0.8rem; line-height:150%; text-
 	</div>
 	<footer>
 		이 웹페이지는 반응형으로서 브라우저 창 크기를 조절하면 웹 디자인의 모양이 유연하게 변화됩니다.
-	</footer>
-	
-<script>
-/*
-//step01__
-document.querySelectorAll("nav li")[0].style.border="1px dashed red";
-document.querySelectorAll("nav li")[1].style.border="1px dashed red";
-document.querySelectorAll("nav li")[2].style.border="1px dashed red";
-document.querySelectorAll("nav li")[3].style.border="1px dashed red";
-
-//step02__
-const $li = document.querySelectorAll("nav li");
-$li[0].style.border="1px dashed red";
-$li[1].style.border="1px dashed red";
-$li[2].style.border="1px dashed red";
-$li[3].style.border="1px dashed red";
-
-//step03__
-const $li = document.querySelectorAll("nav li");
-for(let i=0; i<4; i++){
-	$li[i].style.border="1px dashed red";
-}
-//step04__
-document.querySelector("aside").addEventListener("click",function(){
-	document.querySelector("aside h2").classList.add("bg");
-});*/
-</script>
+	</footer>	
 </body>
 </html>
